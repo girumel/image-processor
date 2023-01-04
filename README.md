@@ -17,7 +17,7 @@ This is a simple image processing API that allows placing images into the fronte
 
 ## Endpoint Library
 After installing the dependencies and starting the server, these endpoints can be tested:
-### GET '/api/metadata?filename={string}'
+### GET `/api/metadata?filename=<string>`
 * General:
     - Fetches a short summarized metadata information about the image
     - Request Arguments: `filename` - string
@@ -25,7 +25,7 @@ After installing the dependencies and starting the server, these endpoints can b
     - This returns the following:
     ``` "Width: 300, Height: 300, Format: jpeg" ```
 
-### GET '/api/resize?filename={string}&width={integer}&height=&{integer}
+### GET `/api/resize?filename=<string>&width=<integer>&height=&<integer>`
 * General:
     - Fetches a resized version of the image based on the request paramaters
     - Request Arguments: `filename` - string, `width` - integer, `height` - integer
